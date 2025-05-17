@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Buttercup Brews Cafe - Discover our passion for coffee." />
+  <title>About - Buttercup Brews Cafe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+   
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdf6f0;
+      color: #4a342e;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header.hero {
+      background: linear-gradient(135deg, #e7d8c9 0%, #cdb69a 100%);
+      padding: 3.5rem 1.5rem 2.5rem;
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+      color: #7c5538;
+      box-shadow: 0 4px 10px rgba(167, 111, 77, 0.3);
+      user-select: none;
+    }
+
+    header.hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    header.hero p {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #a76f4d;
+      box-shadow: 0 2px 6px rgba(124, 85, 56, 0.5);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0.6rem 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-weight: 600;
+    }
+
+    nav ul li a {
+      color: #fdf6f0;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      user-select: none;
+      display: inline-block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #7c5538;
+      box-shadow: 0 3px 8px rgba(124, 85, 56, 0.7);
+    }
+
+    section.content {
+      max-width: 900px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    section.content img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(167, 111, 77, 0.25);
+      margin-bottom: 1.8rem;
+      object-fit: cover;
+      user-select: none;
+    }
+
+    section.content h2 {
+      color: #7c5538;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    section.content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #4a342e;
+      max-width: 700px;
+      margin: 0 auto;
+      user-select: text;
+    }
+
+    footer {
+      background-color: #a76f4d;
+      color: #fdf6f0;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-weight: 600;
+      box-shadow: 0 -3px 8px rgba(124, 85, 56, 0.5);
+      user-select: none;
+      margin-top: auto;
+    }
+
+   
+    @media (max-width: 600px) {
+      header.hero h1 {
+        font-size: 2.2rem;
+      }
+
+      nav ul {
+        gap: 1rem;
+        font-size: 0.95rem;
+      }
+
+      section.content img {
+        max-width: 90%;
+      }
+
+      section.content h2 {
+        font-size: 1.7rem;
+      }
+
+      section.content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>About Us</h1>
+    <p>More than just coffee – it's a lifestyle.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="about.html" class="active">About</a></li>           
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <img src="images/coffee.jpg" alt="A steaming cup of coffee" />
+    <h2>Our Passion for Coffee</h2>
+    <p>
+      Buttercup Brews is dedicated to bringing you the best coffee experience. Our beans are ethically sourced, 
+      and our baristas craft each cup with love. Whether you love espresso, cappuccino, or iced lattes, 
+      we have something for every coffee lover!
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Buttercup Brews</p>
+  </footer>
+</body>
+</html>

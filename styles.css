@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #a76f4d;
+  --primary-dark: #7c5538;
+  --text-color: #4a342e;
+  --bg-light: #fdf6f0;
+  --border-color: #d9c8b7;
+  --font-sans: 'Roboto', sans-serif;
+  --font-script: 'Pacifico', cursive;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-light);
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header.hero {
+  background: linear-gradient(135deg, #e7d8c9 0%, #cdb69a 100%);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  font-family: var(--font-script);
+  color: var(--primary-dark);
+  box-shadow: 0 4px 8px rgb(167 111 77 / 0.2);
+  user-select: none;
+}
+
+header.hero h1 {
+  font-size: 2.8rem;
+  margin: 0 0 0.4rem;
+}
+
+header.hero p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+nav {
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgb(124 85 56 / 0.4);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: var(--primary-dark);
+  outline: none;
+}
+
+/* Active link style if you add it (optional) */
+/* nav ul li a.active {
+  background-color: var(--primary-dark);
+  pointer-events: none;
+} */
+
+
+section.content {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: var(--font-sans);
+}
+
+
+section.content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 10px rgb(124 85 56 / 0.1);
+}
+
+
+section.content h2,
+section.content h3 {
+  color: var(--primary-dark);
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+section.content p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(124, 85, 56, 0.5);
+  outline: none;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label {
+  font-weight: 600;
+  color: var(--primary-dark);
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 6px rgba(167, 111, 77, 0.5);
+  outline: none;
+}
+
+
+textarea {
+  min-height: 120px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  box-shadow: 0 -3px 8px rgb(124 85 56 / 0.3);
+  user-select: none;
+  margin-top: auto;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: var(--font-sans);
+}
+
+table th,
+table td {
+  border: 1px solid var(--border-color);
+  padding: 0.8rem 1.2rem;
+  text-align: left;
+  color: var(--text-color);
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+}
+
+table tr:nth-child(even) {
+  background-color: #f5eee6;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 0.4rem 0;
+  }
+  header.hero h1 {
+    font-size: 2.2rem;
+  }
+  section.content {
+    margin: 1rem 1rem 2rem;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Buttercup Brews Cafe - Get in touch with us." />
+  <title>Contact - Buttercup Brews Cafe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <style>
+   
+    .content {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    label {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: #4a342e;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 0.7rem;
+      border: 1.5px solid #d9c8b7;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+      transition: border-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #a76f4d;
+      outline: none;
+      box-shadow: 0 0 5px rgba(167, 111, 77, 0.5);
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+      font-family: 'Roboto', sans-serif;
+    }
+    .btn {
+      align-self: flex-start;
+      background-color: #a76f4d;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Roboto', sans-serif;
+    }
+    .btn:hover,
+    .btn:focus {
+      background-color: #7c5538;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h2>Get in Touch</h2>
+    <form onsubmit="return validateForm(event)" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Write your message" required></textarea>
+
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Buttercup Brews Cafe</p>
+  </footer>
+</body>
+</html>
