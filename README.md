@@ -1,6 +1,6 @@
-# Buttercup Brews Cafe - Coffee Order Web App
+# Buttercup Brews Cafe - 
 
-Welcome to the **Buttercup Brews Cafe** web app!  
+Welcome to the **Buttercup Brews Cafe** !  
 This is a responsive and professional coffee ordering website where customers can browse, customize, and order their favorite coffee blends.
 
 
